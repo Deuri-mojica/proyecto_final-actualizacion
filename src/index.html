@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto_final</title>
-    <!--enlaces externos-->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto_final</title>
+  <!--enlaces externos-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
 
 <body>
   <header>
@@ -33,7 +34,57 @@
   <main>
     <div class="album py-5 bg-light">
       <div class="container">
+        <div class="row justify-content-center">
+          <!-- **************Aqui inicia la parte del filto *****************-->
+          <div class="col-10">
 
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-filter"></i> Filtrar categorias
+              </div>
+
+              <div class="card-body">
+                <form id="filtro">
+                  <div class="row ">
+                    <div class="col-1 col-sm-1">
+                      <label for="monto" class="form-label">Monto</label>
+                    </div>
+                    <div class="col-2 col-lg-2 col-sm-4 ">
+                      <input type="number" name="monto" id="monto" placeholder="0.00" class="form-control">
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <label for="categorias" class="form-label">Categoria</label>
+                    </div>
+                    <div class="col-2 col-lg-2 col-sm-6 ">
+                      <select name="categorias" id="categorias" class="form-select form-select-sm">
+                        <option value="">Elija una categoria</option>
+
+                      </select>
+                    </div>
+                    <div class="col-1">
+                      <label for="moneda">Moneda</label>
+                    </div>
+                    <div class="col-sm">
+                      <div class=" form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="RD" id="RD" value="RD">
+                        <label class="form-check-label">
+                          RD $
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="USD" id="USD" value="USD">
+                        <label class="form-check-label">
+                          USD $
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--*************** FIN DEL FILTRO******************* -->
         <div id="listado-gastos" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <!-- Aqui es donde va el listado de gastos que se llena de manera dinamica a partir de -->
         </div>
