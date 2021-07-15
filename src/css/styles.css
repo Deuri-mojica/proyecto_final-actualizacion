@@ -1,4 +1,38 @@
- 
+.portada {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.text-style {
+    color: #263238;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.icon-style {
+    color: #09738d;
+}
+.button-style{
+      background-color:#149399;
+      border-color:#149399;
+      border-radius: 25px;    
+  }
+
+  .button-style:hover{
+    background-color: #5FF4FF;
+    border-color: #455A64;
+    color: #263238; 
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+}
 form .card label{
     font-size: 18px;
     margin-left: 10px;
@@ -59,6 +93,10 @@ form .card .btn{
 
 .login-main-design
 {
-    margin-top: 10%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: azure;
 }
 
