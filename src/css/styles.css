@@ -100,3 +100,28 @@ form .card .btn{
     background-color: azure;
 }
 
+/* estilos de las tarjetas  dinamicas */
+#listado-gastos{
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  
+}
+
+#listado-gastos .card{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    
+}
+#listado-gastos .card .parrafo{
+    padding: 8px;
+    margin: auto;
+}
+#listado-gastos .card span{
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:sans-serif
+}

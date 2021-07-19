@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto_final</title>
     <!--enlaces externos-->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
 </head>
 
@@ -66,13 +66,13 @@
                             <input type="number" class="form-control monto" placeholder="0.00" id="monto">
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" value="DOP" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1" checked>
                                 DOP
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" value="USD" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 USD
                             </label>
@@ -87,8 +87,9 @@
         </form>
 
     </main>
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./js/app.js"></script> 
+<script src="./js/alertas.js"></script>
 
 </body>
 
