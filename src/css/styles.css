@@ -13,7 +13,17 @@
     font-family: 'Montserrat', sans-serif;
     font-size: small;
 }
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size:small;
+    color: #067a7e;
+}
 
+.espacio{
+    padding-bottom: 50px;
+    padding-left: 20px;
+    font-weight: 800;
+}
 .icon-style {
     color: #09738d;
 }
@@ -82,7 +92,7 @@ form .card .btn{
 }
 .contenedor-main .title{
     width: 450px;
-    height: 300px;
+    /*height: 100px;*/
     text-transform: uppercase;
 }
 .contenedor-main .title h1{
@@ -100,3 +110,10 @@ form .card .btn{
     background-color: azure;
 }
 
+.margen-navbar{
+    margin-left: 10%;
+}
+
+.margen-container{
+    margin-left: 25% !important;
+}
