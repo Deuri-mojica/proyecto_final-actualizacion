@@ -9,9 +9,10 @@ categoria.addEventListener('submit',event=>{
     }  ;
     
     guardarDatos(nuevaCat);
+      categoria.reset(); 
 
-    alert("Nueva categoria agregada");
-categoria.reset();    
+    // alert("Nueva categoria agregada");
+      
 });
 
 

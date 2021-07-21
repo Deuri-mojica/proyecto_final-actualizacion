@@ -24,7 +24,7 @@
                       
                     <div class="card-body">
                         <!-- aqui empieza el formulario -->
-                        <form>
+                        <form id="form-login">
                             <div class="row mb-3">
                               
                               <div class="col-sm-12">
@@ -52,7 +52,10 @@
                                     <a href="#" class="text-style"><i class="fas fa-lock icon-style" ></i> Olvidó la contraseña?</a>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary form-control button-style">Sign in</button>
+                            <div>
+                               <button type="submit" class="btn btn-primary form-control button-style">Sign in</button>
+                            </div>
+                           
                           </form>
                     </div>
                 </div>
@@ -61,8 +64,8 @@
         </div>
     </main>
 
-
-
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="./js/loginValidasion.js"></script>
     <script src="./js/alertas.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/de55611b66.js" crossorigin="anonymous"></script>

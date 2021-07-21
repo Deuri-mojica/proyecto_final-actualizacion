@@ -15,6 +15,8 @@ window.addEventListener("load", event => {
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
+            
+            
 
           }
           else {
@@ -32,8 +34,9 @@ window.addEventListener("load", event => {
               let lista = JSON.parse(localStorage.getItem("gastos")) || [];
               lista.push(gastos);
               localStorage.setItem("gastos", JSON.stringify(lista));
-              formularioGastos.reset();
               alertaFormulario();
+              formularioGastos.reset();
+              
 
             };
 
@@ -46,7 +49,7 @@ window.addEventListener("load", event => {
         }, false)
       })
   })()
-  
+
   cargarCategorias();
 
 
@@ -63,27 +66,31 @@ window.addEventListener("load", (event) => {
   } else {
     datos.forEach(element => {
       renderizarGastos.innerHTML = renderizarGastos.innerHTML +=
-        `<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title title">Tarjeta de Gastos</h5>
-    <p class="card-text parrafo">${element.descripcion}</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <p><span>Categoria:</span> ${element.categoria}</span>
-    <p><span> Fecha :</span>${element.fecha}</p>
-  </ul>
-  <div class="card-body p-2">
-  <span>Monto:</span>
-  <span>${element.monto}</span>
-  <span>${element.moneda}</span>
-  
-  </div>
-</div>
-`
+          `<div class="card" style="width: 18rem;margin-left: 16px;">
+            <div class="card-body">
+              <h5 class="card-title title"style="font-size: 20px; color: black;font-weight: 600" >Tarjeta de Gastos</h5>
+              <p class="card-text parrafo">${element.descripcion}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <p><span>Categoria:</span> ${element.categoria}</span>
+              <p><span> Fecha :</span>${element.fecha}</p>
+            </ul>
+            <div class="card-body p-2">
+              <span>Monto:</span>
+              <span>${element.monto}</span>
+              <span>${element.moneda}</span>
+
+            </div>
+          </div>
+        </div>
+        `
+
 
     })
-  }
-
+ }
 
 });
-
+const button = document.getElementById("btn");
+  button.addEventListener("click", () =>{
+    window.location.assign("http://127.0.0.1:5502/src/login.html") 
+  })
