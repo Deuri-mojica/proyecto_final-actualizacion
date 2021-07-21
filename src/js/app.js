@@ -47,9 +47,7 @@ window.addEventListener("load", event => {
       })
   })()
   
-
-
-
+  cargarCategorias();
 
 
 });
