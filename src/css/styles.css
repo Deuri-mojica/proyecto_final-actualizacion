@@ -1,4 +1,4 @@
-.portada {
+  .portada {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,6 +13,17 @@
     font-family: 'Montserrat', sans-serif;
     font-size: small;
 }
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size:small;
+    color: #067a7e;
+}
+
+.espacio{
+    padding-bottom: 50px;
+    padding-left: 20px;
+    font-weight: 800;
+}
 
 .icon-style {
     color: #09738d;
@@ -23,7 +34,7 @@
       border-radius: 25px;    
   }
 
-  .button-style:hover{
+.button-style:hover{
     background-color: #5FF4FF;
     border-color: #455A64;
     color: #263238; 
@@ -82,46 +93,11 @@ form .card .btn{
 }
 .contenedor-main .title{
     width: 450px;
-    height: 300px;
+    /*height: 300px;*/
     text-transform: uppercase;
 }
 .contenedor-main .title h1{
     font-size: 50px;
     padding: 60px;
     font-weight: 900;
-}
-
-.login-main-design
-{
-    padding-top: 75px;
-    padding-bottom: 75px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: azure;
-}
-
-/* estilos de las tarjetas  dinamicas */
-#listado-gastos{
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  margin: auto;
-  padding: 30px;
-  
-}
-
-#listado-gastos .card{
-    margin-left: 20px;
-    margin-bottom: 15px;
-    
-}
-#listado-gastos .card .parrafo{
-    padding: 8px;
-    margin: auto;
-}
-#listado-gastos .card span{
-    padding: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family:sans-serif
 }
